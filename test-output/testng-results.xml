@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Payment Project" duration-ms="148519" started-at="2020-07-13T20:10:58 EDT" finished-at="2020-07-13T20:13:27 EDT">
+    <groups>
+    </groups>
+    <test name="Login Test" duration-ms="148519" started-at="2020-07-13T20:10:58 EDT" finished-at="2020-07-13T20:13:27 EDT">
+      <class name="com.payment.testcases.Login_004_InvalidEmail2">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.payment.testcases.Login_004_InvalidEmail2@27a8c74e]" name="setup" is-config="true" duration-ms="10662" started-at="2020-07-13T20:11:55 EDT" finished-at="2020-07-13T20:12:05 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyInvalidEmail2()[pri:0, instance:com.payment.testcases.Login_004_InvalidEmail2@27a8c74e]" name="verifyInvalidEmail2" duration-ms="6056" started-at="2020-07-13T20:12:05 EDT" finished-at="2020-07-13T20:12:11 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidEmail2 -->
+        <test-method status="PASS" signature="exitBrowser()[pri:0, instance:com.payment.testcases.Login_004_InvalidEmail2@27a8c74e]" name="exitBrowser" is-config="true" duration-ms="687" started-at="2020-07-13T20:12:11 EDT" finished-at="2020-07-13T20:12:12 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exitBrowser -->
+      </class> <!-- com.payment.testcases.Login_004_InvalidEmail2 -->
+      <class name="com.payment.testcases.Login_007_RegisteredPhone_CorrectPassword">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.payment.testcases.Login_007_RegisteredPhone_CorrectPassword@646d64ab]" name="setup" is-config="true" duration-ms="9780" started-at="2020-07-13T20:12:53 EDT" finished-at="2020-07-13T20:13:03 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyRegisteredPhone_CorrectPassword()[pri:0, instance:com.payment.testcases.Login_007_RegisteredPhone_CorrectPassword@646d64ab]" name="verifyRegisteredPhone_CorrectPassword" duration-ms="23167" started-at="2020-07-13T20:13:03 EDT" finished-at="2020-07-13T20:13:26 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisteredPhone_CorrectPassword -->
+        <test-method status="PASS" signature="exitBrowser()[pri:0, instance:com.payment.testcases.Login_007_RegisteredPhone_CorrectPassword@646d64ab]" name="exitBrowser" is-config="true" duration-ms="731" started-at="2020-07-13T20:13:26 EDT" finished-at="2020-07-13T20:13:27 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exitBrowser -->
+      </class> <!-- com.payment.testcases.Login_007_RegisteredPhone_CorrectPassword -->
+      <class name="com.payment.testcases.Login_003_InvalidEmail1">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.payment.testcases.Login_003_InvalidEmail1@33f88ab]" name="setup" is-config="true" duration-ms="10749" started-at="2020-07-13T20:11:36 EDT" finished-at="2020-07-13T20:11:47 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyInvalidEmail1()[pri:0, instance:com.payment.testcases.Login_003_InvalidEmail1@33f88ab]" name="verifyInvalidEmail1" duration-ms="6829" started-at="2020-07-13T20:11:47 EDT" finished-at="2020-07-13T20:11:54 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidEmail1 -->
+        <test-method status="PASS" signature="exitBrowser()[pri:0, instance:com.payment.testcases.Login_003_InvalidEmail1@33f88ab]" name="exitBrowser" is-config="true" duration-ms="738" started-at="2020-07-13T20:11:54 EDT" finished-at="2020-07-13T20:11:55 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exitBrowser -->
+      </class> <!-- com.payment.testcases.Login_003_InvalidEmail1 -->
+      <class name="com.payment.testcases.Login_002_UnregisteredPhone">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.payment.testcases.Login_002_UnregisteredPhone@2833cc44]" name="setup" is-config="true" duration-ms="10544" started-at="2020-07-13T20:11:19 EDT" finished-at="2020-07-13T20:11:30 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyUnregisteredPhone()[pri:0, instance:com.payment.testcases.Login_002_UnregisteredPhone@2833cc44]" name="verifyUnregisteredPhone" duration-ms="6011" started-at="2020-07-13T20:11:30 EDT" finished-at="2020-07-13T20:11:36 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUnregisteredPhone -->
+        <test-method status="PASS" signature="exitBrowser()[pri:0, instance:com.payment.testcases.Login_002_UnregisteredPhone@2833cc44]" name="exitBrowser" is-config="true" duration-ms="718" started-at="2020-07-13T20:11:36 EDT" finished-at="2020-07-13T20:11:36 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exitBrowser -->
+      </class> <!-- com.payment.testcases.Login_002_UnregisteredPhone -->
+      <class name="com.payment.testcases.Login_005_InvalidPhone">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.payment.testcases.Login_005_InvalidPhone@2d8f65a4]" name="setup" is-config="true" duration-ms="12364" started-at="2020-07-13T20:12:12 EDT" finished-at="2020-07-13T20:12:25 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyInvalidPhone()[pri:0, instance:com.payment.testcases.Login_005_InvalidPhone@2d8f65a4]" name="verifyInvalidPhone" duration-ms="6589" started-at="2020-07-13T20:12:25 EDT" finished-at="2020-07-13T20:12:31 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidPhone -->
+        <test-method status="PASS" signature="exitBrowser()[pri:0, instance:com.payment.testcases.Login_005_InvalidPhone@2d8f65a4]" name="exitBrowser" is-config="true" duration-ms="711" started-at="2020-07-13T20:12:31 EDT" finished-at="2020-07-13T20:12:32 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exitBrowser -->
+      </class> <!-- com.payment.testcases.Login_005_InvalidPhone -->
+      <class name="com.payment.testcases.Login_006_RegisteredPhone_IncorrectPassword">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.payment.testcases.Login_006_RegisteredPhone_IncorrectPassword@1b68ddbd]" name="setup" is-config="true" duration-ms="13664" started-at="2020-07-13T20:12:32 EDT" finished-at="2020-07-13T20:12:45 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.payment.testcases.Login_006_RegisteredPhone_IncorrectPassword@1b68ddbd]" name="loginTest" duration-ms="6879" started-at="2020-07-13T20:12:45 EDT" finished-at="2020-07-13T20:12:52 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="exitBrowser()[pri:0, instance:com.payment.testcases.Login_006_RegisteredPhone_IncorrectPassword@1b68ddbd]" name="exitBrowser" is-config="true" duration-ms="709" started-at="2020-07-13T20:12:52 EDT" finished-at="2020-07-13T20:12:53 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exitBrowser -->
+      </class> <!-- com.payment.testcases.Login_006_RegisteredPhone_IncorrectPassword -->
+      <class name="com.payment.testcases.Login_001_UnregisteredEmail">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.payment.testcases.Login_001_UnregisteredEmail@3712b94]" name="setup" is-config="true" duration-ms="11361" started-at="2020-07-13T20:10:58 EDT" finished-at="2020-07-13T20:11:10 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyUnregisteredEmail()[pri:0, instance:com.payment.testcases.Login_001_UnregisteredEmail@3712b94]" name="verifyUnregisteredEmail" duration-ms="8599" started-at="2020-07-13T20:11:10 EDT" finished-at="2020-07-13T20:11:18 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUnregisteredEmail -->
+        <test-method status="PASS" signature="exitBrowser()[pri:0, instance:com.payment.testcases.Login_001_UnregisteredEmail@3712b94]" name="exitBrowser" is-config="true" duration-ms="918" started-at="2020-07-13T20:11:18 EDT" finished-at="2020-07-13T20:11:19 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exitBrowser -->
+      </class> <!-- com.payment.testcases.Login_001_UnregisteredEmail -->
+    </test> <!-- Login Test -->
+  </suite> <!-- Payment Project -->
+</testng-results>

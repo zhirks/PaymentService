@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Payment Project">
+	<test name="Login Test">
+		<classes>
+			<class name="com.payment.testcases.Login_001_UnregisteredEmail"></class>
+			<class name="com.payment.testcases.Login_002_UnregisteredPhone"></class>
+			<class name="com.payment.testcases.Login_003_InvalidEmail1"></class>
+			<class name="com.payment.testcases.Login_004_InvalidEmail2"></class>
+			<class name="com.payment.testcases.Login_005_InvalidPhone"></class>
+			<class name="com.payment.testcases.Login_006_RegisteredPhone_IncorrectPassword"></class>
+			<class name="com.payment.testcases.Login_007_RegisteredPhone_CorrectPassword"></class>
+		</classes>
+
+	</test>
+</suite>
