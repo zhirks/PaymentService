@@ -4,13 +4,30 @@
 		<parameter name="browser" value="Chrome" />
 		<parameter name="version" value="73.0" />
 		<parameter name="platform" value="Windows 10" />
+
 		<classes>
 			<class name="com.payment.testcases.Login_001_UnregisteredEmail" />
 			<class name="com.payment.testcases.Login_002_UnregisteredPhone" />
 			<class name="com.payment.testcases.Login_003_InvalidEmail1" />
 			<class name="com.payment.testcases.Login_004_InvalidEmail2" />
 			<class name="com.payment.testcases.Login_005_InvalidPhone" />
-			<class name="com.payment.testcases.Login_006_RegisteredPhone_IncorrectPassword"/>
+			<class name="com.payment.testcases.Login_006_RegisteredPhone_IncorrectPassword" />
+			<class name="com.payment.testcases.Login_007_RegisteredPhone_CorrectPassword" />
+		</classes>
+	</test>
+	
+	<test name="WIN10-FF-TEST">
+		<parameter name="browser" value="Firefox" />
+		<parameter name="version" value="76.0" />
+		<parameter name="platform" value="Windows 10" />
+
+		<classes>
+			<class name="com.payment.testcases.Login_001_UnregisteredEmail" />
+			<class name="com.payment.testcases.Login_002_UnregisteredPhone" />
+			<class name="com.payment.testcases.Login_003_InvalidEmail1" />
+			<class name="com.payment.testcases.Login_004_InvalidEmail2" />
+			<class name="com.payment.testcases.Login_005_InvalidPhone" />
+			<class name="com.payment.testcases.Login_006_RegisteredPhone_IncorrectPassword" />
 			<class name="com.payment.testcases.Login_007_RegisteredPhone_CorrectPassword" />
 		</classes>
 	</test>

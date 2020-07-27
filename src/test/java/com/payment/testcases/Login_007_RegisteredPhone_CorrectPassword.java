@@ -4,6 +4,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -36,9 +37,12 @@ public class Login_007_RegisteredPhone_CorrectPassword extends TestBase {
 	@Parameters({ "browser", "version", "platform"})
 	public void setup(String br, String vr, String pf) throws MalformedURLException {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
+		MutableCapabilities sauceOptions = new MutableCapabilities();
+		sauceOptions.setCapability("screenResolution", "1024x768");
 		capabilities.setCapability("browserName", br);
 		capabilities.setCapability("version", vr);
 		capabilities.setCapability("platform", pf);
+		capabilities.setCapability("sauce:options", sauceOptions);
 		driver = new RemoteWebDriver(new URL(URL), capabilities);
 		
 		initialization();

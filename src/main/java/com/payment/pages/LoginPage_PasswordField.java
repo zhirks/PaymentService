@@ -16,7 +16,7 @@ public class LoginPage_PasswordField extends TestBase {
 	@FindBy(xpath = "//input[@id='password']")
 	WebElement passwdField;
 
-	@FindBy(xpath = "//button[contains(text(),'Log in')]")
+	@FindBy(css = "button.btn.btn-primary.btn-block.btn-rounded.text-uppercase")
 	WebElement loginBtn;
 
 	@FindBy(xpath = "//div[@class='row user-identifier-row']/div/strong")

@@ -41,6 +41,7 @@ public class Login_006_RegisteredPhone_IncorrectPassword extends TestBase {
 		initialization();
 
 		loginPage = new LoginPage();
+		loginPagePassword = new LoginPage_PasswordField();
 	}
 
 	@Test
