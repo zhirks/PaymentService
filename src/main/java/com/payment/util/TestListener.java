@@ -8,7 +8,7 @@ import com.payment.testbase.TestBase;
 
 public class TestListener extends TestBase implements ITestListener {
 	
-    @Override
+	
     public void onTestFailure(ITestResult result) {
     	System.out.println("Test has failed");
     	takeScreenShot(result.getMethod().getMethodName());

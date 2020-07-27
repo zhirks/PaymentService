@@ -1,11 +1,17 @@
 package com.payment.testcases;
 
+import java.net.MalformedURLException;
+import java.net.URL;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.payment.pages.LoginPage;
@@ -21,8 +27,15 @@ public class Login_004_InvalidEmail2 extends TestBase {
 
 	LoginPage loginPage;
 
-	@BeforeMethod
-	public void setup() {
+	@BeforeClass
+	@Parameters({ "browser", "version", "platform" })
+	public void setup(String br, String vr, String pf) throws MalformedURLException {
+		DesiredCapabilities capabilities = new DesiredCapabilities();
+		capabilities.setCapability("browserName", br);
+		capabilities.setCapability("version", vr);
+		capabilities.setCapability("platform", pf);
+		driver = new RemoteWebDriver(new URL(URL), capabilities);
+
 		initialization();
 
 		loginPage = new LoginPage();
@@ -30,10 +43,11 @@ public class Login_004_InvalidEmail2 extends TestBase {
 
 	@Test
 	public void verifyInvalidEmail2() {
-		//Creating instance for reporting / logging
+		// Creating instance for reporting / logging
 		logger = report.createTest("Login to CRM");
 
-		//Fetch test data for Registered Phone and assert if the email / phone displayed is correct
+		// Fetch test data for Registered Phone and assert if the email / phone
+		// displayed is correct
 		String invalidEmail1 = data.getStringData("Login", 4, 0);
 		logger.info("Entering user credentials..");
 		loginPage.login(invalidEmail1);

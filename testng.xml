@@ -1,15 +1,17 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="Payment Project">
-	<test name="Login Test">
+<suite thread-count="2" name="Payment Project">
+	<test name="WIN10-CH-TEST">
+		<parameter name="browser" value="Chrome" />
+		<parameter name="version" value="73.0" />
+		<parameter name="platform" value="Windows 10" />
 		<classes>
-			<class name="com.payment.testcases.Login_001_UnregisteredEmail"></class>
-			<class name="com.payment.testcases.Login_002_UnregisteredPhone"></class>
-			<class name="com.payment.testcases.Login_003_InvalidEmail1"></class>
-			<class name="com.payment.testcases.Login_004_InvalidEmail2"></class>
-			<class name="com.payment.testcases.Login_005_InvalidPhone"></class>
-			<class name="com.payment.testcases.Login_006_RegisteredPhone_IncorrectPassword"></class>
-			<class name="com.payment.testcases.Login_007_RegisteredPhone_CorrectPassword"></class>
+			<class name="com.payment.testcases.Login_001_UnregisteredEmail" />
+			<class name="com.payment.testcases.Login_002_UnregisteredPhone" />
+			<class name="com.payment.testcases.Login_003_InvalidEmail1" />
+			<class name="com.payment.testcases.Login_004_InvalidEmail2" />
+			<class name="com.payment.testcases.Login_005_InvalidPhone" />
+			<class name="com.payment.testcases.Login_006_RegisteredPhone_IncorrectPassword"/>
+			<class name="com.payment.testcases.Login_007_RegisteredPhone_CorrectPassword" />
 		</classes>
-
 	</test>
 </suite>

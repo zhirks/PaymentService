@@ -14,8 +14,6 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.payment.util.ExcelDataProvider;
@@ -31,6 +29,10 @@ public class TestBase {
 	public ExtentReports report;
 	public WebDriverWait wait;
 	public ExtentTest logger;
+	
+	public static final String USERNAME = "zhirks";
+	public static final String ACCESS_KEY = "8ee32358-d432-46e3-b327-dd5cf499e079";
+	public static final String URL = "https://" + USERNAME + ":" + ACCESS_KEY + "@ondemand.saucelabs.com:443/wd/hub";
 
 	public TestBase() {
 		try {
@@ -48,24 +50,11 @@ public class TestBase {
 	}
 
 	public void initialization() {
-		String browserName = prop.getProperty("browser");
-		if (browserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver",
-					"C:\\Users\\RATutor\\eclipse-workspace\\PaymentService\\PaymentProject\\Drivers\\chromedriver.exe");
-			driver = new ChromeDriver();
-			wait = new WebDriverWait(driver, 20);
-
-		} else if (browserName.equals("firefox")) {
-			System.setProperty("webdriver.gecko.driver",
-					"C:\\Users\\RATutor\\eclipse-workspace\\PaymentService\\PaymentProject\\Drivers\\geckodriver.exe");
-			driver = new FirefoxDriver();
-			wait = new WebDriverWait(driver, 20);
-		}
-
+		wait = new WebDriverWait(driver, 30);
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
 		driver.get(prop.getProperty("url"));
 		data = new ExcelDataProvider();
@@ -77,12 +66,9 @@ public class TestBase {
 	}
 	
 	 public void takeScreenShot(String methodName) {
-		 
-		 //String filePath = "C:\\Users\\RATutor\\eclipse-workspace\\PaymentService\\PaymentProject\\Screenshots";
     	 File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
          //The below method will save the screen shot in d drive with test method name 
             try {
-				//FileUtils.copyFile(scrFile, new File("C:\\Users\\RATutor\\eclipse-workspace\\PaymentService\\PaymentProject\\Screenshots"+methodName+"_"+getCurrentDateTime()+".png"));
 				FileUtils.copyFile(scrFile, new File("C:\\Users\\RATutor\\eclipse-workspace\\PaymentService\\PaymentProject\\Screenshots\\"+"Failed_"+methodName+"_"+getCurrentDateTime()+".png"));
 			} catch (IOException e) {
 				e.printStackTrace();

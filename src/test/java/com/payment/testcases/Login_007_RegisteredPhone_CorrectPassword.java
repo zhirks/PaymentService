@@ -1,11 +1,17 @@
 package com.payment.testcases;
 
+import java.net.MalformedURLException;
+import java.net.URL;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.payment.pages.AccountOverviewPage;
@@ -24,16 +30,25 @@ public class Login_007_RegisteredPhone_CorrectPassword extends TestBase {
 	LoginPage loginPage;
 	LoginPage_PasswordField loginPagePassword;
 	AccountOverviewPage accountOverview;
+	
 
-	@BeforeMethod
-	public void setup() {
+	@BeforeClass
+	@Parameters({ "browser", "version", "platform"})
+	public void setup(String br, String vr, String pf) throws MalformedURLException {
+		DesiredCapabilities capabilities = new DesiredCapabilities();
+		capabilities.setCapability("browserName", br);
+		capabilities.setCapability("version", vr);
+		capabilities.setCapability("platform", pf);
+		driver = new RemoteWebDriver(new URL(URL), capabilities);
+		
 		initialization();
 
 		loginPage = new LoginPage();
 		loginPagePassword = new LoginPage_PasswordField();
 		accountOverview = new AccountOverviewPage();
 	}
-
+	
+	
 	@Test
 	public void verifyRegisteredPhone_CorrectPassword() {
 		//Creating instance for reporting / logging
@@ -50,6 +65,9 @@ public class Login_007_RegisteredPhone_CorrectPassword extends TestBase {
 		loginPagePassword.enterIncorrectPassword(data.getStringData("Login", 7, 1));
 		Assert.assertEquals(accountOverview.getAccountOverviewPageTitle(), "Account Overview");
 		logger.info("Successfully signed-in!");
+		wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("a.open-close.waves-effect.waves-light")));
+		accountOverview.clickLeftNav();
+		wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("a.waves-effect.waves-light>span.hide-menu")));
 		accountOverview.logout();
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'LOG IN')]")));
 		Assert.assertEquals(loginPage.getPageTitle(), "Log in to your account - Paysera");

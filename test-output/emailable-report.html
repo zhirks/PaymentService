@@ -8,17 +8,65 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Payment Project</th></tr>
-<tr><td><a href="#t0">Login Test</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">148,519</td><td></td><td></td></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">59</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Payment Project</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Login Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.payment.testcases.Login_001_UnregisteredEmail</td><td><a href="#m0">verifyUnregisteredEmail</a></td><td rowspan="1">1594685470145</td><td rowspan="1">8599</td></tr><tr class="passedodd"><td rowspan="1">com.payment.testcases.Login_002_UnregisteredPhone</td><td><a href="#m1">verifyUnregisteredPhone</a></td><td rowspan="1">1594685490211</td><td rowspan="1">6011</td></tr><tr class="passedeven"><td rowspan="1">com.payment.testcases.Login_003_InvalidEmail1</td><td><a href="#m2">verifyInvalidEmail1</a></td><td rowspan="1">1594685507691</td><td rowspan="1">6829</td></tr><tr class="passedodd"><td rowspan="1">com.payment.testcases.Login_004_InvalidEmail2</td><td><a href="#m3">verifyInvalidEmail2</a></td><td rowspan="1">1594685525922</td><td rowspan="1">6056</td></tr><tr class="passedeven"><td rowspan="1">com.payment.testcases.Login_005_InvalidPhone</td><td><a href="#m4">verifyInvalidPhone</a></td><td rowspan="1">1594685545032</td><td rowspan="1">6589</td></tr><tr class="passedodd"><td rowspan="1">com.payment.testcases.Login_006_RegisteredPhone_IncorrectPassword</td><td><a href="#m5">loginTest</a></td><td rowspan="1">1594685565999</td><td rowspan="1">6879</td></tr><tr class="passedeven"><td rowspan="1">com.payment.testcases.Login_007_RegisteredPhone_CorrectPassword</td><td><a href="#m6">verifyRegisteredPhone_CorrectPassword</a></td><td rowspan="1">1594685583370</td><td rowspan="1">23167</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.payment.testcases.Login_007_RegisteredPhone_CorrectPassword</td><td><a href="#m0">setup</a></td><td rowspan="1">1595759297057</td><td rowspan="1">-1595759297057</td></tr><tr><th colspan="4">Default test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">com.payment.testcases.Login_007_RegisteredPhone_CorrectPassword</td><td><a href="#m1">exitBrowser</a></td><td rowspan="1">1595759297096</td><td rowspan="1">-1595759297096</td></tr><tr><th colspan="4">Default test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.payment.testcases.Login_007_RegisteredPhone_CorrectPassword</td><td><a href="#m2">verifyRegisteredPhone_CorrectPassword</a></td><td rowspan="1">1595759297087</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Login Test</h2><h3 id="m0">com.payment.testcases.Login_001_UnregisteredEmail#verifyUnregisteredEmail</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.payment.testcases.Login_002_UnregisteredPhone#verifyUnregisteredPhone</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.payment.testcases.Login_003_InvalidEmail1#verifyInvalidEmail1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.payment.testcases.Login_004_InvalidEmail2#verifyInvalidEmail2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.payment.testcases.Login_005_InvalidPhone#verifyInvalidPhone</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.payment.testcases.Login_006_RegisteredPhone_IncorrectPassword#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.payment.testcases.Login_007_RegisteredPhone_CorrectPassword#verifyRegisteredPhone_CorrectPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">com.payment.testcases.Login_007_RegisteredPhone_CorrectPassword#setup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
+in C:\Users\RATutor\AppData\Local\Temp\testng-eclipse--713519671\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:272)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:360)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:704)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:283)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.payment.testcases.Login_007_RegisteredPhone_CorrectPassword#exitBrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.payment.testcases.Login_007_RegisteredPhone_CorrectPassword#verifyRegisteredPhone_CorrectPassword</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
+in C:\Users\RATutor\AppData\Local\Temp\testng-eclipse--713519671\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:272)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:360)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:704)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:283)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

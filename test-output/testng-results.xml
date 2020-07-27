@@ -1,109 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Payment Project" duration-ms="148519" started-at="2020-07-13T20:10:58 EDT" finished-at="2020-07-13T20:13:27 EDT">
+  <suite name="Default suite" duration-ms="59" started-at="2020-07-26T06:28:17 EDT" finished-at="2020-07-26T06:28:17 EDT">
     <groups>
     </groups>
-    <test name="Login Test" duration-ms="148519" started-at="2020-07-13T20:10:58 EDT" finished-at="2020-07-13T20:13:27 EDT">
-      <class name="com.payment.testcases.Login_004_InvalidEmail2">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.payment.testcases.Login_004_InvalidEmail2@27a8c74e]" name="setup" is-config="true" duration-ms="10662" started-at="2020-07-13T20:11:55 EDT" finished-at="2020-07-13T20:12:05 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifyInvalidEmail2()[pri:0, instance:com.payment.testcases.Login_004_InvalidEmail2@27a8c74e]" name="verifyInvalidEmail2" duration-ms="6056" started-at="2020-07-13T20:12:05 EDT" finished-at="2020-07-13T20:12:11 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyInvalidEmail2 -->
-        <test-method status="PASS" signature="exitBrowser()[pri:0, instance:com.payment.testcases.Login_004_InvalidEmail2@27a8c74e]" name="exitBrowser" is-config="true" duration-ms="687" started-at="2020-07-13T20:12:11 EDT" finished-at="2020-07-13T20:12:12 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- exitBrowser -->
-      </class> <!-- com.payment.testcases.Login_004_InvalidEmail2 -->
+    <test name="Default test" duration-ms="59" started-at="2020-07-26T06:28:17 EDT" finished-at="2020-07-26T06:28:17 EDT">
       <class name="com.payment.testcases.Login_007_RegisteredPhone_CorrectPassword">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.payment.testcases.Login_007_RegisteredPhone_CorrectPassword@646d64ab]" name="setup" is-config="true" duration-ms="9780" started-at="2020-07-13T20:12:53 EDT" finished-at="2020-07-13T20:13:03 EDT">
+        <test-method status="FAIL" signature="setup(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.payment.testcases.Login_007_RegisteredPhone_CorrectPassword@2833cc44]" name="setup" is-config="true" duration-ms="-1595759297057" started-at="2020-07-26T06:28:17 EDT" finished-at="1969-12-31T19:00:00 EST">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeClass on method setup but has not been marked @Optional or defined
+in C:\Users\RATutor\AppData\Local\Temp\testng-eclipse--713519671\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeClass on method setup but has not been marked @Optional or defined
+in C:\Users\RATutor\AppData\Local\Temp\testng-eclipse--713519671\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:272)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:360)
+at org.testng.internal.Parameters.createParameters(Parameters.java:704)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:283)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifyRegisteredPhone_CorrectPassword()[pri:0, instance:com.payment.testcases.Login_007_RegisteredPhone_CorrectPassword@646d64ab]" name="verifyRegisteredPhone_CorrectPassword" duration-ms="23167" started-at="2020-07-13T20:13:03 EDT" finished-at="2020-07-13T20:13:26 EDT">
+        <test-method status="SKIP" signature="verifyRegisteredPhone_CorrectPassword()[pri:0, instance:com.payment.testcases.Login_007_RegisteredPhone_CorrectPassword@2833cc44]" name="verifyRegisteredPhone_CorrectPassword" duration-ms="0" started-at="2020-07-26T06:28:17 EDT" finished-at="2020-07-26T06:28:17 EDT">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeClass on method setup but has not been marked @Optional or defined
+in C:\Users\RATutor\AppData\Local\Temp\testng-eclipse--713519671\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeClass on method setup but has not been marked @Optional or defined
+in C:\Users\RATutor\AppData\Local\Temp\testng-eclipse--713519671\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:272)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:360)
+at org.testng.internal.Parameters.createParameters(Parameters.java:704)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:283)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegisteredPhone_CorrectPassword -->
-        <test-method status="PASS" signature="exitBrowser()[pri:0, instance:com.payment.testcases.Login_007_RegisteredPhone_CorrectPassword@646d64ab]" name="exitBrowser" is-config="true" duration-ms="731" started-at="2020-07-13T20:13:26 EDT" finished-at="2020-07-13T20:13:27 EDT">
+        <test-method status="SKIP" signature="exitBrowser()[pri:0, instance:com.payment.testcases.Login_007_RegisteredPhone_CorrectPassword@2833cc44]" name="exitBrowser" is-config="true" duration-ms="-1595759297096" started-at="2020-07-26T06:28:17 EDT" finished-at="1969-12-31T19:00:00 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exitBrowser -->
       </class> <!-- com.payment.testcases.Login_007_RegisteredPhone_CorrectPassword -->
-      <class name="com.payment.testcases.Login_003_InvalidEmail1">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.payment.testcases.Login_003_InvalidEmail1@33f88ab]" name="setup" is-config="true" duration-ms="10749" started-at="2020-07-13T20:11:36 EDT" finished-at="2020-07-13T20:11:47 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifyInvalidEmail1()[pri:0, instance:com.payment.testcases.Login_003_InvalidEmail1@33f88ab]" name="verifyInvalidEmail1" duration-ms="6829" started-at="2020-07-13T20:11:47 EDT" finished-at="2020-07-13T20:11:54 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyInvalidEmail1 -->
-        <test-method status="PASS" signature="exitBrowser()[pri:0, instance:com.payment.testcases.Login_003_InvalidEmail1@33f88ab]" name="exitBrowser" is-config="true" duration-ms="738" started-at="2020-07-13T20:11:54 EDT" finished-at="2020-07-13T20:11:55 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- exitBrowser -->
-      </class> <!-- com.payment.testcases.Login_003_InvalidEmail1 -->
-      <class name="com.payment.testcases.Login_002_UnregisteredPhone">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.payment.testcases.Login_002_UnregisteredPhone@2833cc44]" name="setup" is-config="true" duration-ms="10544" started-at="2020-07-13T20:11:19 EDT" finished-at="2020-07-13T20:11:30 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifyUnregisteredPhone()[pri:0, instance:com.payment.testcases.Login_002_UnregisteredPhone@2833cc44]" name="verifyUnregisteredPhone" duration-ms="6011" started-at="2020-07-13T20:11:30 EDT" finished-at="2020-07-13T20:11:36 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUnregisteredPhone -->
-        <test-method status="PASS" signature="exitBrowser()[pri:0, instance:com.payment.testcases.Login_002_UnregisteredPhone@2833cc44]" name="exitBrowser" is-config="true" duration-ms="718" started-at="2020-07-13T20:11:36 EDT" finished-at="2020-07-13T20:11:36 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- exitBrowser -->
-      </class> <!-- com.payment.testcases.Login_002_UnregisteredPhone -->
-      <class name="com.payment.testcases.Login_005_InvalidPhone">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.payment.testcases.Login_005_InvalidPhone@2d8f65a4]" name="setup" is-config="true" duration-ms="12364" started-at="2020-07-13T20:12:12 EDT" finished-at="2020-07-13T20:12:25 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifyInvalidPhone()[pri:0, instance:com.payment.testcases.Login_005_InvalidPhone@2d8f65a4]" name="verifyInvalidPhone" duration-ms="6589" started-at="2020-07-13T20:12:25 EDT" finished-at="2020-07-13T20:12:31 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyInvalidPhone -->
-        <test-method status="PASS" signature="exitBrowser()[pri:0, instance:com.payment.testcases.Login_005_InvalidPhone@2d8f65a4]" name="exitBrowser" is-config="true" duration-ms="711" started-at="2020-07-13T20:12:31 EDT" finished-at="2020-07-13T20:12:32 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- exitBrowser -->
-      </class> <!-- com.payment.testcases.Login_005_InvalidPhone -->
-      <class name="com.payment.testcases.Login_006_RegisteredPhone_IncorrectPassword">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.payment.testcases.Login_006_RegisteredPhone_IncorrectPassword@1b68ddbd]" name="setup" is-config="true" duration-ms="13664" started-at="2020-07-13T20:12:32 EDT" finished-at="2020-07-13T20:12:45 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.payment.testcases.Login_006_RegisteredPhone_IncorrectPassword@1b68ddbd]" name="loginTest" duration-ms="6879" started-at="2020-07-13T20:12:45 EDT" finished-at="2020-07-13T20:12:52 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="exitBrowser()[pri:0, instance:com.payment.testcases.Login_006_RegisteredPhone_IncorrectPassword@1b68ddbd]" name="exitBrowser" is-config="true" duration-ms="709" started-at="2020-07-13T20:12:52 EDT" finished-at="2020-07-13T20:12:53 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- exitBrowser -->
-      </class> <!-- com.payment.testcases.Login_006_RegisteredPhone_IncorrectPassword -->
-      <class name="com.payment.testcases.Login_001_UnregisteredEmail">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.payment.testcases.Login_001_UnregisteredEmail@3712b94]" name="setup" is-config="true" duration-ms="11361" started-at="2020-07-13T20:10:58 EDT" finished-at="2020-07-13T20:11:10 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifyUnregisteredEmail()[pri:0, instance:com.payment.testcases.Login_001_UnregisteredEmail@3712b94]" name="verifyUnregisteredEmail" duration-ms="8599" started-at="2020-07-13T20:11:10 EDT" finished-at="2020-07-13T20:11:18 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUnregisteredEmail -->
-        <test-method status="PASS" signature="exitBrowser()[pri:0, instance:com.payment.testcases.Login_001_UnregisteredEmail@3712b94]" name="exitBrowser" is-config="true" duration-ms="918" started-at="2020-07-13T20:11:18 EDT" finished-at="2020-07-13T20:11:19 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- exitBrowser -->
-      </class> <!-- com.payment.testcases.Login_001_UnregisteredEmail -->
-    </test> <!-- Login Test -->
-  </suite> <!-- Payment Project -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

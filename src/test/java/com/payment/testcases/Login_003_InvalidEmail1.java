@@ -1,11 +1,17 @@
 package com.payment.testcases;
 
+import java.net.MalformedURLException;
+import java.net.URL;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.payment.pages.LoginPage;
@@ -21,8 +27,15 @@ public class Login_003_InvalidEmail1 extends TestBase {
 
 	LoginPage loginPage;
 
-	@BeforeMethod
-	public void setup() {
+	@BeforeClass
+	@Parameters({ "browser", "version", "platform"})
+	public void setup(String br, String vr, String pf) throws MalformedURLException {
+		DesiredCapabilities capabilities = new DesiredCapabilities();
+		capabilities.setCapability("browserName", br);
+		capabilities.setCapability("version", vr);
+		capabilities.setCapability("platform", pf);
+		driver = new RemoteWebDriver(new URL(URL), capabilities);
+		
 		initialization();
 
 		loginPage = new LoginPage();
